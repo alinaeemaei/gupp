@@ -1,0 +1,33 @@
+.ProductLineComponent {
+  border-radius: 30px;
+  background: rgb(245, 245, 245);
+  min-width: 25px;
+  width: 100%;
+  margin: 1%;
+  height: 20%;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.ProductLineComponent img {
+  width: 30%;
+}
+.ProductLineComponent p {
+  font-size: inherit;
+}
+@media (max-width: 800px) {
+  .ProductLineComponent {
+    transition: 0.8s;
+    border-radius: 0px;
+  }
+  .ProductLineComponent p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px) and (orientation: portrate) {
+  .ProductLineComponent img {
+    width: 15%;
+  }
+}

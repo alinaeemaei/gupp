@@ -1,0 +1,45 @@
+.header {
+  width: 100%;
+  height: 50px;
+  font-family: "Overpass", sans-serif;
+  background-size: 450% 450%;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  flex-direction: row;
+  font-family: "Overpass", sans-serif;
+  align-content: center;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.ul li a {
+  display: block;
+  height: 100%;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+.ul li a:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.ul li {
+  float: left;
+}
+.ul li a:hover:not(.active) {
+  background-color: #111;
+}

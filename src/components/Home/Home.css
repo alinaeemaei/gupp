@@ -1,0 +1,110 @@
+/* body {
+  width: 100%;
+  background-position: center;
+  font-family: "Overpass", sans-serif;
+  background: rgb(52, 53, 78);
+  background-size: 450% 450%;
+  animation: AnimationName 10s ease infinite;
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.home {
+  width: 1000px;
+  height: 1000px;
+  margin: -100px;
+  top: 0%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 50px;
+  color: white;
+
+  background: black;
+  position: fixed;
+  display: none;
+  z-index: 20;
+}
+.home p {
+  margin: 150px;
+}
+@media (max-width: 400px) and (orientation: portrate) {
+  .home {
+    display: block;
+  }
+} */
+.base {
+  padding-top: 100px;
+  margin-top: -100px;
+  flex: 1;
+  width: 100%;
+  height: auto;
+  background-position: center;
+  font-family: "Overpass", sans-serif;
+  background-size: 450% 450%;
+  animation: AnimationName 10s ease infinite;
+  min-width: 300px;
+}
+
+div.detail {
+  flex: auto;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-evenly;
+}
+div.detail div:hover {
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.349);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.b1 {
+  height: unset;
+  resize: inherit;
+  width: 100%;
+  z-index: 1;
+}
+.image-dive {
+  margin-top: 0px;
+  width: 100%;
+  flex: 1;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+}
+div.productLine {
+  width: 100%;
+  height: 40vh;
+  background-color: rgb(255, 255, 255);
+}
+div.productLine-div {
+}
+div.productLine-div a {
+  filter: saturate(0);
+}
+div.productLine-div a:hover {
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.212);
+  transition: 0.8s;
+  filter: saturate(1);
+  cursor: pointer;
+}
+@media (max-width: 400px) and (orientation: portrate) {
+  .base {
+    min-width: 500px;
+  }
+}
+@media (min-width: 800px) {
+  .base {
+    min-width: 500px;
+    transition: 0.8s;
+  }
+}
